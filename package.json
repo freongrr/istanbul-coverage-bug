@@ -1,0 +1,24 @@
+{
+  "name": "istanbul-coverage-bug",
+  "description": "Reproduce a bug with coverage data (and HTML reports)",
+  "version": "1.0.0",
+  "homepage": "https://github.com/freongrr/istanbul-coverage-bug",
+  "author": {
+    "name": "Fabien Cortina",
+    "email": "fabien.cortina@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:freongrr/istanbul-coverage-bug.git"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul cover --report html ./node_modules/.bin/_mocha -- --compilers js:babel-register test/*"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "6.22.0",
+    "babel-register": "6.22.0",
+    "chai": "3.5.0",
+    "istanbul": "1.0.0-alpha.2",
+    "mocha": "3.2.0"
+  }
+}
