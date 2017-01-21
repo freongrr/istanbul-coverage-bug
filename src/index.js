@@ -1,9 +1,9 @@
 "use strict";
 
-module.exports = function(error) {
+function extractMessage(error) {
     return error.message || error.toString();
 }
 
-function otherFunction() {
-    return "foo";
+module.exports = function(error) {
+    return extractMessage(error);
 }
